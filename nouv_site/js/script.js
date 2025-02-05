@@ -2,12 +2,12 @@ var bosses = {
     "araignee": {
         "title": "Araignée, Souveraine de la Forêt Noire",
         "image": "../images/cartes_boss/araignee.png",
-        "description": "L'Araignée règne sur les sombres et humides profondeurs de la Forêt Noire du Royaume des Ténèbres. Elle tisse des toiles impossibles à voir, où se perdent ceux qui s'y aventurent.<br><br>Entrave Fatale : Lorsqu’elle te capture dans sa toile, elle te prive de toute liberté de mouvement pendant un tour. Le prochain déplacement que tu feras sera amoindri de deux cases à cause des chaînes invisibles qui te retiennent."
+        "description": "L'Araignée règne sur les sombres et humides profondeurs de la Forêt Noire du Royaume des Ténèbres. Elle tisse des toiles impossibles à voir, où se perdent ceux qui s'y aventurent.<br><br>Entrave Fatale : Lorsqu’elle capture sa victime dans sa toile, elle l'a prive de toute liberté de mouvement. Mais après s'être assez débattu, sa victime peut s'échapper. Cependant, son déplacement sera amoindri à cause des résidus de ses chaînes collantes."
     },
     "dragon": {
         "title": "Dragon de Feu, Souverain des Montagnes Incandescentes",
         "image": "../images/cartes_boss/dragon_de_feu.png",
-        "description": "Le Dragon de Feu est une créature dévastatrice, capable de réduire toute chose en cendres. Il règne sur les cimes volcaniques du Royaume des Ténèbres, où le sol brûle sous ses griffes acérées et où l'air est saturé de soufre.<br><br>Flamme Infernale : Chaque déplacement ravive la douleur des brûlures sur le corps de ses victimes, les forçant à faire face à une douleur continue."
+        "description": "Le Dragon de Feu est une créature dévastatrice, capable de réduire toute chose en cendres. Il règne sur les cimes volcaniques du Royaume des Ténèbres, où le sol brûle sous ses griffes acérées et où l'air est saturé de soufre.<br><br>Flamme Infernale : Chaque pas devient un supplice, ravivant les brûlures et consumant lentement la chaire de ses victimes les forçant à faire face à une douleur continue, réduisant lentement toute résistance en cendres."
     },
     "kraken": {
         "title": "Kraken, Souverain des Profondeurs Abyssales",
