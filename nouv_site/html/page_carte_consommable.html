@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection de Cartes Consommable</title>
+    <link rel="stylesheet" href="../css/style_page_carte_consommable.css"> 
+</head>
+<body>
+    <form class="search-bar" action="#" method="get">
+        <input type="text" id="searchInput" placeholder="Rechercher une carte..." oninput="filterCards()">
+    </form>
+
+    <div class="triangles">
+        <div class="triangle bottom-right-clair"></div>
+        <div class="triangle top-left-fonce"></div>
+        <div class="triangle bottom-right-fonce"></div>
+        <div class="triangle top-left-clair"></div>
+    </div>
+    <div class="collection">
+
+    <button class="back-button" onclick="window.location.href='page_carte.html'">Retour</button>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/pendaison.png" alt="Carte Consommable : Pendaison">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Pendaison</h3>
+                <div class="parallelogram">
+                    <span>Tu te pends et meurs. Reviens à la première case en perdant toutes tes cartes.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/epee_de_lumiere.png" alt="Carte Consommable : Épée de lumière">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Épée de lumière</h3>
+                <div class="parallelogram">
+                    <span>Désactive un piège.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/potion_de_vie.png" alt="Carte Consommable : Potion de vie">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Potion de vie</h3>
+                <div class="parallelogram">
+                    <span>Soigne-toi de 10 PV.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/phoenix.png" alt="Carte Consommable : Phoenix">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Phoenix</h3>
+                <div class="parallelogram">
+                    <span>Après être mort revient une fois au point de départ avec toutes tes cartes équipements.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/chipeur_arrete_chipper.png" alt="Carte Consommable : Chipeur arrête de chiper">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Chipeur arrête de chiper</h3>
+                <div class="parallelogram">
+                    <span>Choisissez un joueur et volez lui une carte de manière aléatoire.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/trousse_de_soin.png" alt="Carte Consommable : Trousse de secours">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Trousse de secours</h3>
+                <div class="parallelogram">
+                    <span>Vous vous soignez de la moitié de vos PV totaux.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/soin_d_Urgence.png" alt="Carte Consommable : Soin d’urgence">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Soin d’urgence</h3>
+                <div class="parallelogram">
+                    <span>Protège d’un coup fatal en ne laissant au joueur, qu’un seul PV.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/auberge.png" alt="Carte Consommable : Nuit à l'auberge">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Nuit à l'auberge</h3>
+                <div class="parallelogram">
+                    <span>Vous vous soignez entièrement mais vous êtes immobilisé pendant 2 tours. Vous pouvez cependant toujours bouger les autres pions.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/oracle.png" alt="Carte Consommable : Oracle">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Oracle</h3>
+                <div class="parallelogram">
+                    <span>Vous pouvez regarder la carte du dessus d’une des pioches de votre choix et vous pouvez la prendre si vous la voulez.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/tapis_volant.png" alt="Carte Consommable : Tapis volant">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Tapis volant</h3>
+                <div class="parallelogram">
+                    <span>Permet d’aller sur la même case que l’adversaire le plus proche devant soi.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/promo.png" alt="Carte Consommable : Promo">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Promo</h3>
+                <div class="parallelogram">
+                    <span>Choisis une carte en plus chez le marchand.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/permutation.png" alt="Carte Consommable : Permutation">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Permutation</h3>
+                <div class="parallelogram">
+                    <span>Permet de permuter sa position avec un joueur au choix.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/Kayou_deCompagnie.png" alt="Carte Consommable : Kayoux">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Kayoux</h3>
+                <div class="parallelogram">
+                    <span>Inflige 10 dégâts à n'importe qui y compris le boss.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/etoile.png" alt="Carte Consommable : Étoile">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Étoile</h3>
+                <div class="parallelogram">
+                    <span>Permet d'être invincible pendant une attaque d'un adversaire.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/laMeute_IIMPACTTTOOO.png" alt="Carte Consommable : Meute">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Meute</h3>
+                <div class="parallelogram">
+                    <span>Redonne 10 PV à tous les joueurs.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/lunette_rayon_X.png" alt="Carte Consommable : Lunettes rayon X">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Lunettes rayon X</h3>
+                <div class="parallelogram">
+                    <span>Permet de regarder toutes les cartes du joueur de ton choix.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/rune_protection.png" alt="Carte Consommable : Rune de protection">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Rune de protection</h3>
+                <div class="parallelogram">
+                    <span>Bloque l’effet de la malédiction subie.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/saut_temporel.png" alt="Carte Consommable : Saut temporel">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Saut temporel</h3>
+                <div class="parallelogram">
+                    <span>Permet de rejouer un tour immédiatement.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/esquive_Chanceuse.png" alt="Carte Consommable : Esquive chanceuse">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Esquive chanceuse</h3>
+                <div class="parallelogram">
+                    <span>Vous esquivez le combat contre un monstre tout en gagnant ses récompenses.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/cri_desespoire.png" alt="Carte Consommable : Cri de désespoir !">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Cri de désespoir !</h3>
+                <div class="parallelogram">
+                    <span>Dès que vous mourrez face au boss, vous vous régénérez complètement. Cependant, vous perdez 4 d'attaque.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/eau_benite.png" alt="Carte Consommable : Fiole d’eau bénite">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Fiole d’eau bénite</h3>
+                <div class="parallelogram">
+                    <span>Peut être jeté à n'importe quel moment pour empêcher l'effet d'une carte consommable ennemie.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/chacun_son_probleme.png" alt="Carte Consommable : Chacun son problème">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Chacun son problème</h3>
+                <div class="parallelogram">
+                    <span>Transfère l’une de vos malédiction au joueur de votre choix.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/poulet_trop_bon.png" alt="Carte Consommable : Le poulet c’est trop bon">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Le poulet c’est trop bon</h3>
+                <div class="parallelogram">
+                    <span>Tu danses sur le poulet et regagne 5 PV.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/miso_djinn.png" alt="Carte Consommable : Soupe miso-djinn">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Soupe miso-djinn</h3>
+                <div class="parallelogram">
+                    <span>Envoie un djinn hanter un adversaire au choix qui lui soigne 3PV chaque tour.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/misandravio_liche.png" alt="Carte Consommable : Misandravio-liche">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Misandravio-liche</h3>
+                <div class="parallelogram">
+                    <span>Envoie une liche hanter un adversaire au choix qui l’aide au prochain combat en lui ajoutant 3 d’attaque.<br><br>Coût : 3
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/stay_hydrated.png" alt="Carte Consommable : Stay hydrated">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Stay hydrated</h3>
+                <div class="parallelogram">
+                    <span>Bois un verre d’eau et augmente ton attaque de 3 pour le prochain combat.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/salade.png" alt="Carte Consommable : Feuille de salade">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Feuille de salade</h3>
+                <div class="parallelogram">
+                    <span>Familier. Invoque Samuel la tortue seulement pour ton prochain combat. Possède 30 PV et attire les attaques sur lui jusqu'à sa mort.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/ChevalierPancake.png" alt="Carte Consommable : Chevalier pancake">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Chevalier pancake</h3>
+                <div class="parallelogram">
+                    <span>Cherche une case fontaine de vie dans la pioche et l’ajouter.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/bien_fait.png" alt="Carte Consommable : Bien fait pour vous">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bien fait pour vous</h3>
+                <div class="parallelogram">
+                    <span>Pioche une malédiction, tout le monde la subis sauf toi.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_consommable/Accord.png" alt="Carte Consommable : Accord ">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Accord </h3>
+                <div class="parallelogram">
+                    <span>Vous désignez un autre joueur et piochez deux cartes. Parmi les deux cartes tirées, gardez en une et donnez celle restante au joueur désigné.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+
+    
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+
+    
+    <script>
+        function filterCards() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+    
+            cards.forEach(card => {
+                const cardName = card.querySelector('.card-name').textContent.toLowerCase();  // Chercher le nom de la carte
+                if (cardName.includes(input)) {
+                    card.style.display = 'flex';  // Afficher la carte si le nom correspond à la recherche
+                } else {
+                    card.style.display = 'none';  // Cacher la carte si le nom ne correspond pas
+                }
+            });
+        }
+
+        // Récupération des éléments nécessaires
+        const modal = document.getElementById("image-modal");
+        const modalImage = document.getElementById("modal-image");
+        const closeBtn = document.querySelector(".close");
+        const images = document.querySelectorAll(".image img");
+
+        // Ouvrir le modal au clic sur une image
+        images.forEach((img) => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImage.src = img.src; // Affiche l'image cliquée
+            });
+        });
+
+        // Fermer le modal en cliquant sur le bouton "close"
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Fermer le modal en cliquant à l'extérieur de l'image
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

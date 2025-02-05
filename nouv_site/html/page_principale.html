@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon of Betrayal</title>
+    <link rel="stylesheet" href="../css/style_page_principale.css">
+</head>
+<body>
+    <div class="banner"></div>
+
+    <nav class="navbar">
+        <a href="#presentation" class="nav-link">Présentation</a>
+        <a href="#teaser" class="nav-link">Teaser Vidéo</a>
+        <a href="#boite3d" class="nav-link">Boîte 3D & Règles</a>
+        <a href="#gameplay" class="nav-link">Gameplay</a>
+        <a href="#rewards" class="nav-link">Récompenses</a>
+        <a href="page_carte.html">Collection de cartes</a>
+    </nav>
+    
+    <header class="header">
+        <h1 class="title">DUNGEON OF BETRAYAL</h1>
+        <p class="subtitle">#Lorem Ipsum Dolor Sit Amet Consectetur</p>
+        <button class="btn">Bouton 1</button>
+        <button class="btn">Bouton 2</button>
+    </header>
+    
+    <section id="presentation" class="section" data-scroll>
+        <h2 class="section-title">Présentation du jeu</h2>
+        <p class="section-text">Description du jeu et stratégie de communication.</p>
+    </section>
+    
+    <section id="teaser" class="section" data-scroll>
+        <h2 class="section-title">Teaser Vidéo</h2>
+        <video controls class="video">
+            <source src="teaser.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+    </section>
+    
+    <section id="boite3d" class="section" data-scroll>
+        <h2 class="section-title">Boîte de jeu en 3D & Règles</h2>
+        <img src="boite-jeu.png" alt="Modélisation 3D de la boîte du jeu" class="image">
+        <p class="section-text">Explication des règles du jeu.</p>
+    </section>
+    
+    <section id="gameplay" class="section" data-scroll>
+        <h2 class="section-title">Vidéo de Gameplay</h2>
+        <video controls class="video">
+            <source src="gameplay.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture de vidéos.
+        </video>
+    </section>
+
+    <!-- Section des récompenses -->
+    <section id="rewards" class="section rewards">
+        <h2>Choisissez votre récompense</h2>
+        <div class="reward">
+            <h3>Participez au tirage au sort</h3>
+            <p>Participez à notre tirage pour avoir une chance de gagner une figurine exclusive du jeu !</p>
+            <p>Votre contribution : <strong>3€</strong></p>
+            <button class="contribute-button" data-amount="3" data-contributed="false">Contribuer <span>293</span> participants</button>
+        </div>
+        <div class="reward">
+            <h3>Affiche exclusive du jeu</h3>
+            <p>Recevez une affiche haut de gamme avec l'illustration principale du jeu, idéale pour vos murs !</p>
+            <p>Votre contribution : <strong>10€</strong></p>
+            <button class="contribute-button" data-amount="10" data-contributed="false">Contribuer <span>137</span> participants</button>
+        </div>
+        <div class="reward">
+            <h3>Carte de remerciement personnalisée</h3>
+            <p>Recevez une carte de remerciement personnalisée, signée par les créateurs du projet.</p>
+            <p>Votre contribution : <strong>15€</strong></p>
+            <button class="contribute-button" data-amount="15" data-contributed="false">Contribuer <span>210</span> participants</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2025 Projet Kickstarter. Tous droits réservés.</p>
+    </footer>
+    
+    <div id="notifications-container"></div>
+
+    <script>
+        const buttons = document.querySelectorAll('.contribute-button');
+
+        buttons.forEach(button => {
+            let contributed = button.dataset.contributed === "true";  
+            const countDisplay = button.querySelector('span');
+            let count = parseInt(countDisplay.textContent);
+            const amount = button.getAttribute('data-amount'); 
+
+            if (contributed) {
+                button.classList.add('contributed');  
+            }
+
+            button.addEventListener('click', () => {
+                contributed = !contributed;  
+                count = contributed ? count + 1 : count - 1;  
+                countDisplay.textContent = count;  
+
+                button.dataset.contributed = contributed.toString();  
+                if (contributed) {
+                    button.classList.add('contributed');  
+                } else {
+                    button.classList.remove('contributed');  
+                }
+
+                if (contributed) {
+                    showNotification(amount, "Merci pour votre contribution de");
+                } else {
+                    showNotification(amount, "Votre contribution de");
+                }
+            });
+
+            function showNotification(amount, message) {
+                const notification = document.createElement('div');
+                notification.classList.add('notification');
+                const notificationText = contributed
+                    ? `${message} ${amount}€ !`
+                    : `${message} ${amount}€ a été annulée.`;
+
+                notification.textContent = notificationText;
+                document.getElementById('notifications-container').appendChild(notification);
+
+                setTimeout(() => {
+                    notification.classList.add('show');
+                }, 10);
+
+                setTimeout(() => {
+                    notification.classList.remove('show');
+                    setTimeout(() => notification.remove(), 500);
+                }, 4000);
+            }
+
+            function fluctuate() {
+                const fluctuation = Math.random() > 0.5 ? 1 : -1;  
+                const fluctuationAmount = Math.floor(Math.random() * 1) + 1;  
+                count += fluctuation * fluctuationAmount;  
+
+                if (count < 0) count = 0;
+                countDisplay.textContent = count;
+
+                const randomInterval = Math.floor(Math.random() * 3000) + 2000;  
+                setTimeout(fluctuate, randomInterval);  
+            }
+
+            fluctuate();
+        });
+    </script>
+</body>
+</html>

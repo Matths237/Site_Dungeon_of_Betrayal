@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection de Cartes Malédiction</title>
+    <link rel="stylesheet" href="../css/style_page_carte_malediction.css"> 
+</head>
+<body>
+    <form class="search-bar" action="#" method="get">
+        <input type="text" id="searchInput" placeholder="Rechercher une carte..." oninput="filterCards()">
+    </form>
+
+    <div class="triangles">
+        <div class="triangle bottom-right-clair"></div>
+        <div class="triangle top-left-fonce"></div>
+        <div class="triangle bottom-right-fonce"></div>
+        <div class="triangle top-left-clair"></div>
+    </div>
+    <div class="collection">
+
+    <button class="back-button" onclick="window.location.href='page_carte.html'">Retour</button>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/embuscade.png" alt="Carte Malédiction : Embuscade">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Embuscade</h3>
+                <div class="parallelogram">
+                    <span>Un joueur de ton choix doit affronter un monstre sans gagner de récompense.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/Chaussure_teleguides.png" alt="Carte Malédiction : Chaussures téléguidées">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Chaussures téléguidées</h3>
+                <div class="parallelogram">
+                    <span>Un joueur de ton choix doit avancer de 3 cases.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/Revient_ici.png" alt="Carte Malédiction : Revient ici">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Revient ici</h3>
+                <div class="parallelogram">
+                    <span>Le joueur devant toi doit reculer de 3 cases. Si plus de 1 joueur est présent sur la même case, tu choisis qui recule. Si aucun joueur n’est devant toi, c’est toi qui recule.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/ruee_vers_la_mort.png" alt="Carte Malédiction : Ruée vers la mort">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Ruée vers la mort</h3>
+                <div class="parallelogram">
+                    <span>Un joueur de ton choix se téléporte à la case “Boss”.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/gants_epineux.png" alt="Carte Malédiction : Gants épineux">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Gants épineux</h3>
+                <div class="parallelogram">
+                    <span>Après chaque attaque, tu perds 2 PV.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/lunette_casse.png" alt="Carte Malédiction : Lunettes cassées">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Lunettes cassées</h3>
+                <div class="parallelogram">
+                    <span>Avant chaque attaque pour ton prochain combat, lance un dé. Si le résultat est impair, l’attaque échoue.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/fiole_vodka.png" alt="Carte Malédiction : Fiole de vodka">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Fiole de vodka</h3>
+                <div class="parallelogram">
+                    <span>Pour ton prochain combat, tu perds 2 d’attaque.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/malchance_legendaire.png" alt="Carte Malédiction : Malchance légendaire">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Malchance légendaire</h3>
+                <div class="parallelogram">
+                    <span>Déplace-toi jusqu’à la case “Piège” la plus proche. Si aucune case “Piège” ne se trouve sur le terrain, ne fais rien.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/piege_ours.png" alt="Carte Malédiction : Piège à ours">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Piège à ours</h3>
+                <div class="parallelogram">
+                    <span>Perds 10 PV.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/Assaut_general.png" alt="Carte Malédiction : Assaut général !">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Assaut général !</h3>
+                <div class="parallelogram">
+                    <span>Tous les joueurs se téléportent à la case “Boss”.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/carapace_bleu.png" alt="Carte Malédiction : Carapace bleue">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Carapace bleue</h3>
+                <div class="parallelogram">
+                    <span>Le joueur le plus proche de la case “Boss” perd un objet au choix. Si tu es ce joueur, c’est toi qui perds un objet.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/boomerang.png" alt="Carte Malédiction : Boomerang">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Boomerang</h3>
+                <div class="parallelogram">
+                    <span>Inflige des dégâts égal à ton attaque, à tous les joueurs et monstres devant toi mais tu subis le même nombre de dégâts en retour.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/tempete.png" alt="Carte Malédiction : Tempête">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Tempête</h3>
+                <div class="parallelogram">
+                    <span>Tous les joueurs inversent leur position sur le plateau, emportant les tuiles avec eux. (1↔4, 2↔3)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/missile.png" alt="Carte Malédiction : Missile">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Missile</h3>
+                <div class="parallelogram">
+                    <span>Tous les joueurs perdent 8 PV.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/cosplay.png" alt="Carte Malédiction : Cosplay">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Cosplay</h3>
+                <div class="parallelogram">
+                    <span>Enfile un costume et perds un équipement choisi au hasard par les joueurs. Si la malédiction “Mouchoir usagé” est présente, c’est elle qui est défaussée à la place d’un équipement.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/bromance.png" alt="Carte Malédiction : Bromance">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bromance</h3>
+                <div class="parallelogram">
+                    <span>Coopère avec le joueur le plus proche jusqu’à ce que l’un de vous deux meurt. Si deux joueurs sont à la même distance, coopère avec les deux.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/EL_PRIMO.png" alt="Carte Malédiction : EL PRIMO !!">
+            </div>
+            <div class="info">
+                <h3 class="card-name">EL PRIMO !!</h3>
+                <div class="parallelogram">
+                    <span>Saute sur le joueur le plus proche. Tu lui inflige la moitié de tes PV actuels en dégâts mais tu perds la moitié de tes PV actuels. Reste sur la case où tu as sauté, sans déclencher de combat. Si tu n’as que 1 PV, cette attaque n’inflige de dégâts à personne.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/coup_de_foudre.png" alt="Carte Malédiction : Coup de foudre">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Coup de foudre</h3>
+                <div class="parallelogram">
+                    <span>Tu perds 5 PV et es paralysé pendant 1 tour.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/impots.png" alt="Carte Malédiction : Impôts">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Impôts</h3>
+                <div class="parallelogram">
+                    <span>Choisis l’un de tes équipements à défausser.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/sombre_destinee.png" alt="Carte Malédiction : Sombre destin">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Sombre destin</h3>
+                <div class="parallelogram">
+                    <span>Un joueur de ton choix doit soit perdre 10 PV, soit reculer de 5 cases.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/mouchoir_usage.png" alt="Carte Malédiction : Mouchoir usagé">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Mouchoir usagé</h3>
+                <div class="parallelogram">
+                    <span>Cet objet inutile prend 2 place d'équipement et ne peut être ni défaussé, ni remplacé, sauf par la malédiction “Cosplay".</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/bagutte_casse.png" alt="Carte Malédiction : Baguette magique cassée">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Baguette magique cassée</h3>
+                <div class="parallelogram">
+                    <span>Tes attaques infligent leurs dégâts à l’ennemi et les renvoie à toi-même pendant 3 tours.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/peur_du_noir.png" alt="Carte Malédiction : Peur du noir">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Peur du noir</h3>
+                <div class="parallelogram">
+                    <span>Tu ne peux pas utiliser de cartes consommables pendant 2 tours.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/sacrifice_necessaire.png" alt="Carte Malédiction : Sacrifice nécessaire">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Sacrifice nécessaire</h3>
+                <div class="parallelogram">
+                    <span>Impossible d’utiliser des consommables jusqu’à ta prochaine mort, mais augmente de 2 ton espace consommable de manière permanente.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/toolbox_du_digital.png" alt="Carte Malédiction : Toolbox du digital">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Toolbox du digital</h3>
+                <div class="parallelogram">
+                    <span>Tu visionnes 36 heures de vidéos et perds 3 d’attaque sur toutes tes prochaines attaques.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/de_malefique.png" alt="Carte Malédiction : Dé maléfique">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Dé maléfique</h3>
+                <div class="parallelogram">
+                    <span>Tous les joueurs lancent un dé. Le joueur avec le plus gros chiffre prend au hasard une carte du joueur avec le plus petit chiffre. Si des égalités se produisent pour le plus grand ou le plus petit chiffre, seuls les dés des joueurs concernés sont relancés.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/musique_maetro.png" alt="Carte Malédiction : Musique maestro">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Musique maestro</h3>
+                <div class="parallelogram">
+                    <span>Choisis la musique. Si elle est joyeuse, tous les joueurs avancent de 3 cases. Si elle est triste, tous les joueurs reculent de 3 cases.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/exil.png" alt="Carte Malédiction : Exil">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Exil</h3>
+                <div class="parallelogram">
+                    <span>Les joueurs décident de la case sur laquelle tu te téléportes.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/brise_glace.png" alt="Carte Malédiction : Brise-glace">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Brise-glace</h3>
+                <div class="parallelogram">
+                    <span>Lors de ton prochain combat, ton adversaire augmente son attaque de moitié.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_malediction/plante_la.png" alt="Carte Malédiction : Planté là">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Planté là</h3>
+                <div class="parallelogram">
+                    <span>Lance un combat contre le joueur devant toi. En cas de victoire, tu prends sa place sur le plateau. Si tu perds, tu meurs. Si aucun joueur n’est devant toi, rien ne se passe.</span>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+
+
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+
+    
+    <script>
+        function filterCards() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+    
+            cards.forEach(card => {
+                const cardName = card.querySelector('.card-name').textContent.toLowerCase();  // Chercher le nom de la carte
+                if (cardName.includes(input)) {
+                    card.style.display = 'flex';  // Afficher la carte si le nom correspond à la recherche
+                } else {
+                    card.style.display = 'none';  // Cacher la carte si le nom ne correspond pas
+                }
+            });
+        }
+
+        // Récupération des éléments nécessaires
+        const modal = document.getElementById("image-modal");
+        const modalImage = document.getElementById("modal-image");
+        const closeBtn = document.querySelector(".close");
+        const images = document.querySelectorAll(".image img");
+
+        // Ouvrir le modal au clic sur une image
+        images.forEach((img) => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImage.src = img.src; // Affiche l'image cliquée
+            });
+        });
+
+        // Fermer le modal en cliquant sur le bouton "close"
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Fermer le modal en cliquant à l'extérieur de l'image
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>

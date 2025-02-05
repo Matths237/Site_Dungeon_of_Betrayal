@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection de Cartes Équipement</title>
+    <link rel="stylesheet" href="../css/style_page_carte_equipement.css">
+</head>
+<body>
+    <form class="search-bar" action="#" method="get">
+        <input type="text" id="searchInput" placeholder="Rechercher une carte..." oninput="filterCards()">
+    </form>
+
+    <div class="triangles">
+        <div class="triangle bottom-right-clair"></div>
+        <div class="triangle top-left-fonce"></div>
+        <div class="triangle bottom-right-fonce"></div>
+        <div class="triangle top-left-clair"></div>
+    </div>
+    <div class="collection">
+
+    <button class="back-button" onclick="window.location.href='page_carte.html'">Retour</button>
+    
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/epee_ifrit.png" alt="Carte Équipement : Épée d’Ifrit">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Épée d’Ifrit</h3>
+                <div class="parallelogram">
+                    <span>Attaque +3.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/miroir_verite.png" alt="Carte Équipement : Miroir de vérité">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Miroir de vérité</h3>
+                <div class="parallelogram">
+                    <span>Copie l’effet d’une de tes cartes équipement. Ne peux pas copier la carte équipement “Canne de grand-mère”.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/tablier_cuisine.png" alt="Carte Équipement : Tablier de cuisine">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Tablier de cuisine</h3>
+                <div class="parallelogram">
+                    <span>Défense +3.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/casque_mineur.png" alt="Carte Équipement : Casque du mineur">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Casque du mineur</h3>
+                <div class="parallelogram">
+                    <span>Défense +2.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/bouclier_pierre.png" alt="Carte Équipement : Bouclier en pierre">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bouclier en pierre</h3>
+                <div class="parallelogram">
+                    <span>Défense +4, attaque -2.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/marteau_marbre.png" alt="Carte Équipement : Marteau en marbre">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Marteau en marbre</h3>
+                <div class="parallelogram">
+                    <span>Attaque +4 mais vous devez attendre 1 tour en combat avant de l’utiliser.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/hache_or.png" alt="Carte Équipement : Hache en or">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Hache en or</h3>
+                <div class="parallelogram">
+                    <span>Attaque +5 mais se brise dès la première utilisation.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/botte_hermes.png" alt="Carte Équipement : Bottes d'Hermès">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bottes d'Hermès</h3>
+                <div class="parallelogram">
+                    <span>Défense -2. Pour chaque déplacement, vous devez avancez de 3 cases en plus.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/marteau_plastique.png" alt="Carte Équipement : Marteau en plastique">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Marteau en plastique</h3>
+                <div class="parallelogram">
+                    <span>Attaque -1.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/botte_aile.png" alt="Carte Équipement : Bottes ailées">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bottes ailées</h3>
+                <div class="parallelogram">
+                    <span>Pour chaque déplacement, vous devez avancez de 3 cases en plus.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/gantelet_barbare.png" alt="Carte Équipement : Gantelets du barbare">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Gantelets du barbare</h3>
+                <div class="parallelogram">
+                    <span>Attaque +3 par carte équipement.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/canne_grand_mere.png" alt="Carte Équipement : Canne de grand-mère">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Canne de grand-mère</h3>
+                <div class="parallelogram">
+                    <span>Contre un ennemi/joueur : lancez un dé, si celui-ci est un 6, l’attaque fait 99 de dégât, sinon, vous recevez 10 de dégâts.<br>Contre le boss : lancez 3 fois le dé, si le chiffre est le même, vous tuez le boss, sinon, la canne se casse et vous perdez la carte.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/pain.png" alt="Carte Équipement : Baguette de pain">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Baguette de pain</h3>
+                <div class="parallelogram">
+                    <span>Les soins reçus augmentent de 5.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/parapluie.png" alt="Carte Équipement : Parapluie de Kingsman">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Parapluie de Kingsman</h3>
+                <div class="parallelogram">
+                    <span>Défense +3, Attaque +3.<br><br>Coût : 5</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/body_pillow.png" alt="Carte Équipement : Body pillow de waifu">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Body pillow de waifu</h3>
+                <div class="parallelogram">
+                    <span>Quand un ennemi attaque lance un dé. Si tu obtiens 1, tu esquives l’attaque.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/echarpe_des_fees.png" alt="Carte Équipement : Écharpe des fées">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Écharpe des fées</h3>
+                <div class="parallelogram">
+                    <span>Soigne l’utilisateur de 2 PV à chaque déplacement.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/bonbon.png" alt="Carte Équipement : Bonbon EXP">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bonbon EXP</h3>
+                <div class="parallelogram">
+                    <span>Attaque +2, PV +5.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/uchigatana.png" alt="Carte Équipement : Uchigatana">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Uchigatana</h3>
+                <div class="parallelogram">
+                    <span>Attaque+3, permet de faire 1 esquive par combat.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/botte_de_plomb.png" alt="Carte Équipement : Bottes de plomb">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Bottes de plomb</h3>
+                <div class="parallelogram">
+                    <span>Pour chaque déplacement, vous devez avancez de 3 cases en moins.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/golem_kayou.png" alt="Carte Équipement : Golem de kayoux">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Golem de kayoux</h3>
+                <div class="parallelogram">
+                    <span>Familier. Possède 20PV, 2 d’attaque et attire les attaques vers lui jusqu'à sa mort.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/chien_compagnie.png" alt="Carte Équipement : Chien de compagnie">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Chien de compagnie</h3>
+                <div class="parallelogram">
+                    <span>Familier. Possède 10PV, 3 d’attaque et absorbe 2 points de dégâts à chaque attaque subie.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/sac.png" alt="Carte Équipement : Sac">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Sac</h3>
+                <div class="parallelogram">
+                    <span>Ajoute 3 emplacements d’équipement.<br><br>Coût : 0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/lightsaber.png" alt="Carte Équipement : Sabre laser">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Sabre laser</h3>
+                <div class="parallelogram">
+                    <span>Attaque +6.<br><br>Coût : 5</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/dopant.png" alt="Carte Équipement : Produit dopant">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Produit dopant</h3>
+                <div class="parallelogram">
+                    <span>Les familiers ont 2x plus de dégâts et reçoivent 2x plus de soin.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/autocuiseur.png" alt="Carte Équipement : Autocuiseur Fom">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Autocuiseur Fom</h3>
+                <div class="parallelogram">
+                    <span>Familier. Possède 10 PV, soigne le joueur de 3 PV, absorbe 2 points de dégâts à chaque attaque subie.<br><br>Coût : 3</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/dague_vampire.png" alt="Carte Équipement : Dague de vampirisme">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Dague de vampirisme</h3>
+                <div class="parallelogram">
+                    <span>Attaque +1, récupère 3 PV à chaque attaque.<br><br>Coût : 2</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/pistolet_six.png" alt="Carte Équipement : Pistolet six-coup">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Pistolet six-coup</h3>
+                <div class="parallelogram">
+                    <span>Attaque +5 et perd 2 PV pour les 6 prochaines attaques.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/fusil_pompe.png" alt="Carte Équipement : Fusil à pompe">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Fusil à pompe</h3>
+                <div class="parallelogram">
+                    <span>Attaque +7, ne peut attaquer que 1 tour sur 2.<br><br>Coût : 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/epee_mousse.png" alt="Carte Équipement : Épée en mousse">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Épée en mousse</h3>
+                <div class="parallelogram">
+                    <span>Attaque +1.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="image">
+                <img src="../images/cartes_equipement/plastron.png" alt="Carte Équipement : Plastron">
+            </div>
+            <div class="info">
+                <h3 class="card-name">Plastron</h3>
+                <div class="parallelogram">
+                    <span>Défense +2.<br><br>Coût : 1</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+    </div>
+
+
+    
+    <script>
+        function filterCards() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.querySelectorAll('.card');
+    
+            cards.forEach(card => {
+                const cardName = card.querySelector('.card-name').textContent.toLowerCase();  // Chercher le nom de la carte
+                if (cardName.includes(input)) {
+                    card.style.display = 'flex';  // Afficher la carte si le nom correspond à la recherche
+                } else {
+                    card.style.display = 'none';  // Cacher la carte si le nom ne correspond pas
+                }
+            });
+        }
+
+        // Récupération des éléments nécessaires
+        const modal = document.getElementById("image-modal");
+        const modalImage = document.getElementById("modal-image");
+        const closeBtn = document.querySelector(".close");
+        const images = document.querySelectorAll(".image img");
+
+        // Ouvrir le modal au clic sur une image
+        images.forEach((img) => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImage.src = img.src; // Affiche l'image cliquée
+            });
+        });
+
+        // Fermer le modal en cliquant sur le bouton "close"
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Fermer le modal en cliquant à l'extérieur de l'image
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+</html>
