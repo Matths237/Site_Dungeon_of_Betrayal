@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Collection de Cartes Ennemi</title>
     <link rel="stylesheet" href="../css/style_page_carte_ennemi.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" type="image/png" href="../images/autre/SAMUEEEEEEL.png">
 </head>
 <body>
-    <form class="search-bar" action="#" method="get">
-        <input type="text" id="searchInput" placeholder="Rechercher une carte..." oninput="filterCards()">
-    </form>
 
     <div class="triangles">
         <div class="triangle bottom-right-clair"></div>
@@ -21,248 +20,81 @@
 
     <button class="back-button" onclick="window.location.href='page_carte.html'">Retour</button>
 
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/epouvantail/epouvantail0.png" alt="Carte Ennemi : Epouvantail 1">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Epouvantail v1</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
+    <div class="collection">
+        <div class="card-group">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/epouvantail/epouvantail0.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/epouvantail/epouvantail1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/epouvantail/epouvantail2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/epouvantail/epouvantail3.png" alt=""></div>
                 </div>
             </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/epouvantail/epouvantail1.png" alt="Carte Ennemi : Epouvantail 2">
-            </div>
             <div class="info">
-                <h3 class="card-name">Epouvantail v2</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/epouvantail/epouvantail2.png" alt="Carte Ennemi : Epouvantail 3">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Epouvantail v3</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/epouvantail/epouvantail3.png" alt="Carte Ennemi : Epouvantail 4">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Epouvantail v4</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/mimic/mimic0.png" alt="Carte Ennemi : Mimic 1">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Mimic v1</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/mimic/mimic1.png" alt="Carte Ennemi : Mimic 2">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Mimic v2</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/mimic/mimic2.png" alt="Carte Ennemi : Mimic 3">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Mimic v3</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/mimic/mimic3.png" alt="Carte Ennemi : Mimic 4">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Mimic v4</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/gobelin/gobelin0.png" alt="Carte Ennemi : Gobelin 1">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Gobelin v1</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/gobelin/gobelin1.png" alt="Carte Ennemi : Gobelin 2">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Gobelin v2</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/gobelin/gobelin2.png" alt="Carte Ennemi : Gobelin 3">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Gobelin v3</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/gobelin/gobelin3.png" alt="Carte Ennemi : Gobelin 4">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Gobelin v4</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/squelette/squelette0.png" alt="Carte Ennemi : Squelette 1">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Squelette v1</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/squelette/squelette1.png" alt="Carte Ennemi : Squelette 2">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Squelette v2</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/squelette/squelette2.png" alt="Carte Ennemi : Squelette 3">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Squelette v3</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="image">
-                <img src="../images/cartes_ennemi/squelette/squelette3.png" alt="Carte Ennemi : Squelette 4">
-            </div>
-            <div class="info">
-                <h3 class="card-name">Squelette v4</h3>
-                <div class="parallelogram">
-                    <span>aaaaaaaaaaaaaaaaaa</span>
-                </div>
+                <h3 class="card-name">Épouvantail</h3>
+                <div class="parallelogram"><span>Dressé au milieu des terres stériles, l’Épouvantail semble immobile… jusqu’à ce que la nuit tombe. Créé pour protéger les cultures d’antan, il s’est lié aux ténèbres, chassant désormais tout intrus de ses terres mortes. Son regard vide perce l’obscurité, un témoin silencieux des âmes perdues dans la toile de l’Araignée.</span></div>
             </div>
         </div>
     
+        <div class="card-group">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/mimic/mimic0.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/mimic/mimic1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/mimic/mimic2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/mimic/mimic3.png" alt=""></div>
+                </div>
+            </div>
+            <div class="info">
+                <h3 class="card-name">Mimic</h3>
+                <div class="parallelogram"><span>Enfoui dans les profondeurs abyssales, ce faux trésor repose parmi les épaves rongées par le temps, attendant qu’une main téméraire vienne l’ouvrir. Son bois gorgé d’eau suinte d’une immonde écume où grouillent des parasites marins, prêts à se répandre sur leur prochaine victime. Certains racontent que le Kraken l’abandonne volontairement parmi ses trésors pour tromper les imprudents.</span></div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/gobelin/gobelin0.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/gobelin/gobelin1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/gobelin/gobelin2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/gobelin/gobelin3.png" alt=""></div>
+                </div>
+            </div>
+            <div class="info">
+                <h3 class="card-name">Gobelin</h3>
+                <div class="parallelogram"><span>Créatures chétives mais rusées, les gobelins prospèrent dans l’ombre des volcans où règne le Dragon de Feu. Toujours en quête d’or et d’objets à revendre, ils pullulent dans les cavernes, évitant les torrents de lave avec une agilité surprenante. Ils attaquent rarement seuls, préférant submerger leurs proies par le nombre avant de disparaître avec leur butin.</span></div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/squelette/squelette0.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/squelette/squelette1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/squelette/squelette2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="../images/cartes_ennemi/squelette/squelette3.png" alt=""></div>
+                </div>
+            </div>
+            <div class="info">
+                <h3 class="card-name">Squelette</h3>
+                <div class="parallelogram"><span>Éveillés par une force maudite, ces guerriers sans vie errent sans but dans les Terres Dévastées, serviteurs d’un maître qu’ils ont oublié. Leurs os craquent sous le poids des siècles, mais leur détermination reste intacte. Nombreux sont ceux qui tombent sous leur lame, rejoignant ainsi les rangs du Squelette Géant dans une armée qui ne connaît ni repos ni pitié.</span></div>
+            </div>
+        </div>
     </div>
+    
+
 
 
     
-    <div id="image-modal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modal-image">
-    </div>
 
 
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
-        function filterCards() {
-            const input = document.getElementById('searchInput').value.toLowerCase();
-            const cards = document.querySelectorAll('.card');
-    
-            cards.forEach(card => {
-                const cardName = card.querySelector('.card-name').textContent.toLowerCase();  // Chercher le nom de la carte
-                if (cardName.includes(input)) {
-                    card.style.display = 'flex';  // Afficher la carte si le nom correspond à la recherche
-                } else {
-                    card.style.display = 'none';  // Cacher la carte si le nom ne correspond pas
-                }
-            });
-        }
-
-        // Récupération des éléments nécessaires
-        const modal = document.getElementById("image-modal");
-        const modalImage = document.getElementById("modal-image");
-        const closeBtn = document.querySelector(".close");
-        const images = document.querySelectorAll(".image img");
-
-        // Ouvrir le modal au clic sur une image
-        images.forEach((img) => {
-            img.addEventListener("click", () => {
-                modal.style.display = "block";
-                modalImage.src = img.src; // Affiche l'image cliquée
-            });
-        });
-
-        // Fermer le modal en cliquant sur le bouton "close"
-        closeBtn.addEventListener("click", () => {
-            modal.style.display = "none";
-        });
-
-        // Fermer le modal en cliquant à l'extérieur de l'image
-        window.addEventListener("click", (event) => {
-            if (event.target === modal) {
-                modal.style.display = "none";
-            }
+        var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
         });
     </script>
 

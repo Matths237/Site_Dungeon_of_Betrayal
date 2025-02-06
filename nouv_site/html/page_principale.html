@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeon of Betrayal</title>
     <link rel="stylesheet" href="../css/style_page_principale.css">
+    <link rel="icon" type="image/png" href="../images/autre/SAMUEEEEEEL.png">
+    <!-- Lien vers le CSS de Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Lien vers le JS de Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <div class="banner"></div>
@@ -12,7 +19,8 @@
     <nav class="navbar">
         <a href="#presentation" class="nav-link">Présentation</a>
         <a href="#teaser" class="nav-link">Teaser Vidéo</a>
-        <a href="#boite3d" class="nav-link">Boîte 3D & Règles</a>
+        <a href="#boite3d" class="nav-link">Boîte 3D</a>
+        <a href="#regles" class="nav-link">Règles</a>
         <a href="#gameplay" class="nav-link">Gameplay</a>
         <a href="#rewards" class="nav-link">Récompenses</a>
         <a href="page_carte.html">Collection de cartes</a>
@@ -20,34 +28,65 @@
     
     <header class="header">
         <h1 class="title">DUNGEON OF BETRAYAL</h1>
-        <p class="subtitle">#Lorem Ipsum Dolor Sit Amet Consectetur</p>
-        <button class="btn">Bouton 1</button>
-        <button class="btn">Bouton 2</button>
-    </header>
+        <p class="subtitle" id="presentation">Don't let anything stop you, not even your friends</p>
+    </header >
     
-    <section id="presentation" class="section" data-scroll>
-        <h2 class="section-title">Présentation du jeu</h2>
-        <p class="section-text">Description du jeu et stratégie de communication.</p>
+    <section class="section" data-scroll>
+        <h2 class="section-title">Jeux de société style roguelike/aventure de 2 à 8 joueurs dont le but est de parvenir à être celui qui mettra le coup de grâce au Boss du donjon.<br><br></h2>
+        <p class="section-text">Pour faire connaître un maximum notre jeu, nous l'avons fait testé à de nombreuses personnes tel que de la famille, des amis ou des associations comme Game of DeVinci. Au total, plus de 50 personnes y ont joué et en ont parlé à leur entourage. Notre stratégie étant principalement du bouche à oreilles.
+        
+        <br><br>
+        
+        Nous avons aussi créer des comptes sur les réseaux sociaux tel que linkedin et instagram pour mettre à jour nos avancées sur le jeu.
+        </p>
+
+
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/dungeon-of-betrayal-b6bb56345?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="../images/autre/logo_linkedin.png" alt="LinkedIn" class="logo_linkedin">
+            </a>   
+            <a href="https://www.instagram.com/dungeon_of_betrayal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="../images/autre/logo_insta.png" alt="Instagram" class="logo_instagram" id="teaser">
+            </a>    
+        </div>
     </section>
     
-    <section id="teaser" class="section" data-scroll>
-        <h2 class="section-title">Teaser Vidéo</h2>
+    <section class="section" data-scroll>
+        <h2 class="section-title" id="teaser">Teaser Vidéo</h2>
         <video controls class="video">
-            <source src="teaser.mp4" type="video/mp4">
+            <source src="../videos/DOB_Pres4.mp4" type="video/mp4" >
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
     </section>
+
+    <section id="boite3d">
+        <h2 class="section-title">Boîte du jeu</h2> 
+        <img src="../images/autre/boite_du_jeu_3D.png" alt="Modélisation 3D de la boîte du jeu" class="image">
+    </section>
     
-    <section id="boite3d" class="section" data-scroll>
-        <h2 class="section-title">Boîte de jeu en 3D & Règles</h2>
-        <img src="boite-jeu.png" alt="Modélisation 3D de la boîte du jeu" class="image">
-        <p class="section-text">Explication des règles du jeu.</p>
+    
+    <section id="regles" class="section" data-scroll>
+        <h2 class="section-title">Règles</h2>        
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="../images/regles/page1_premierCouverture.png" /></div>
+                <div class="swiper-slide"><img src="../images/regles/page2.png" /></div>
+                <div class="swiper-slide"><img src="../images/regles/page3.png" /></div>
+                <div class="swiper-slide"><img src="../images/regles/page4.png" /></div>
+                <div class="swiper-slide"><img src="../images/regles/page5.png" /></div>
+                <div class="swiper-slide"><img src="../images/regles/page6.png" /></div> </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </section>
     
     <section id="gameplay" class="section" data-scroll>
         <h2 class="section-title">Vidéo de Gameplay</h2>
         <video controls class="video">
-            <source src="gameplay.mp4" type="video/mp4">
+            <source src="../videos/video_gameplay.mp4" type="video/mp4">
             Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
     </section>
@@ -81,7 +120,34 @@
     
     <div id="notifications-container"></div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        centeredSlides: false,
+        slidesPerGroupSkip: 1,
+        grabCursor: true,
+        keyboard: {
+            enabled: true,
+        },
+        breakpoints: {
+            769: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            },
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+
+
         const buttons = document.querySelectorAll('.contribute-button');
 
         buttons.forEach(button => {
@@ -89,9 +155,11 @@
             const countDisplay = button.querySelector('span');
             let count = parseInt(countDisplay.textContent);
             const amount = button.getAttribute('data-amount'); 
+            const originalBackgroundColor = getComputedStyle(button).backgroundColor;
 
             if (contributed) {
                 button.classList.add('contributed');  
+                button.style.backgroundColor = "green";
             }
 
             button.addEventListener('click', () => {
@@ -102,8 +170,10 @@
                 button.dataset.contributed = contributed.toString();  
                 if (contributed) {
                     button.classList.add('contributed');  
+                    button.style.backgroundColor = "green";
                 } else {
                     button.classList.remove('contributed');  
+                    button.style.backgroundColor = originalBackgroundColor;
                 }
 
                 if (contributed) {
