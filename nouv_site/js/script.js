@@ -2,7 +2,7 @@ var bosses = {
     "araignee": {
         "title": "Araignée, Souveraine de la Forêt Noire",
         "image": "../images/cartes_boss/araignee.png",
-        "description": "L'Araignée règne sur les sombres et humides profondeurs de la Forêt Noire du Royaume des Ténèbres. Elle tisse des toiles impossibles à voir, où se perdent ceux qui s'y aventurent.<br><br>Entrave Fatale : Lorsqu’elle capture sa victime dans sa toile, elle l'a prive de toute liberté de mouvement. Mais après s'être assez débattu, sa victime peut s'échapper. Cependant, son déplacement sera amoindri à cause des résidus de ses chaînes collantes."
+        "description": "L'Araignée règne sur les sombres et humides profondeurs de la Forêt Noire du Royaume des Ténèbres. Elle tisse des toiles impossibles à voir, où se perdent ceux qui s'y aventurent.<br><br>Entrave Fatale : Lorsqu’elle capture sa victime dans sa toile, elle l'a prive de toute liberté de mouvement. Mais après s'être assez débattu, sa victime peut s'échapper. Cependant, son déplacement sera amoindri à cause des résidus de ces chaînes collantes."
     },
     "dragon": {
         "title": "Dragon de Feu, Souverain des Montagnes Incandescentes",
