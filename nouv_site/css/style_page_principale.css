@@ -25,13 +25,27 @@ header {
     margin-top: 80px;
 }
 
+.subtitle {
+    font-size: 25px;
+    margin-top: -20px;
+}
+
+.section-text {
+    font-size: 20px
+}
+
 .header {
     margin-top: 250px;
 }
 
 h1 {
-    font-size: 4em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-size: 5em;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1.5);
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
@@ -69,6 +83,10 @@ section {
     border-bottom: 3px solid #8b5e3c;
 }
 
+.section-title {
+    font-size: 25px
+}
+
 video {
     width: 50%; 
     border: 5px solid #8b5e3c;
@@ -99,12 +117,6 @@ footer {
     padding: 50px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin-top: 20px;
-}
-
-.rewards h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #f4e1c1;
 }
 
 .reward {
@@ -145,7 +157,7 @@ footer {
 }
 
 .contribute-button:hover {
-    background: #e68900;
+    background: #c17400;
 }
 
 .contribute-button span {
@@ -183,4 +195,89 @@ footer {
     left: 0;
     z-index: -100; 
     opacity: 50%;
+}
+
+.image {
+    width: 60%;
+    height: 90%;
+}
+
+html, body {
+    height: 100%;
+  }
+  
+  .swiper {
+    width: 60%; 
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+      width: 50px; 
+      height: 50px;
+      background-color: black;
+      border-radius: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10; 
+  }
+  
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+      font-size: 20px; 
+      color: white; 
+  }
+  
+  .swiper-button-next {
+      right: 100px; 
+  }
+  
+  .swiper-button-prev {
+      left: 100px; 
+  }
+  
+
+.logos {
+    margin-top: 50px;
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+.logo_linkedin {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.3s ease;
+}
+
+.logo_linkedin:hover{
+    transform: scale(1.5);
+}
+
+.logo_instagram {
+    margin-top: 5px;
+    width: 185px; 
+    height: 135px;
+    transition: transform 0.3s ease;
+}
+
+.logo_instagram:hover{
+    transform: scale(1.5);
 }
